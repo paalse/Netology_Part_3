@@ -39,6 +39,7 @@ int main()
 		cnt = stoi(str);
 		Address** addrArray = new Address*[cnt];
 
+		// Получение данных из файла
 		for (int i=0; i < cnt; i++) {
 			fin >> sity;
 			fin >> street;
@@ -47,22 +48,22 @@ int main()
 			Address* addr = new Address(sity, street, home, flat);
 			addrArray[i] = addr;
 		}
-
+		
+		// Запись в файл
 		if (fout.is_open()) {
 			for (int i = 0; i < cnt; i++) {
-				std::cout << addrArray[i]->printAddress() << std::endl;
+			//	std::cout << addrArray[i]->printAddress() << std::endl;
 				fout << addrArray[i]->printAddress() << "\n";
 			}
 		}
 		else {
 			std::cout << "Ошибка открытия файла out.txt";
 		}
-
+		
+		// Освобождение памяти
 		for (int i=0; i < cnt; i++) {
-			std::cout << "Освобождение памяти";
 			delete addrArray[i];
 		}
-
 		delete[] addrArray;
 	}
 	else {
