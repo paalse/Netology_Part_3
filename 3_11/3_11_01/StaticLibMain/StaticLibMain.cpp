@@ -11,8 +11,8 @@ int main()
 	std::cout << "¬ведите им€: ";
 	std::cin >> name;
 
-	Greeter printName;
-	printName.greet(name);
+	Greeter greeter;
+	std::cout << greeter.greet(name) << std::endl;
 	system("pause");
 
 	return 0;

@@ -2,5 +2,5 @@
 
 class Greeter {
 public:
-	void greet(std::string name);
+	std::string greet(std::string name);
 };
