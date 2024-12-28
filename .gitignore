@@ -4,6 +4,9 @@
 !.gitignore
 !README.md
 !CMakeLists.txt
+x64/
+.vs/
+out/
 /3_1
 /3_2
 /3_3
@@ -14,11 +17,3 @@
 /3_8
 /3_9
 /3_10
-/3_11/3_11_01/Greeter/x64
-/3_11/3_11_01/StaticLibMain/x64
-/3_11/3_11_01/.vs
-/3_11/3_11_02/DynamicLibMain/x64
-/3_11/3_11_02/Leaver/x64
-/3_11/3_11_02/.vs
-/3_11/3_11_03/.vs
-/3_11/3_11_03/out
