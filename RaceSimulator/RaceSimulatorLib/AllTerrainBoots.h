@@ -4,18 +4,18 @@
 #include "GroundVehicle.h"
 
 
-#ifdef RICESIMULATORLIB_EXPORTS
-#define RICESIMULATORLIB_API __declspec(dllexport)
+#ifdef RACESIMULATORLIB_EXPORTS
+#define RACESIMULATORLIB_API __declspec(dllexport)
 #else
-#define RICESIMULATORLIB_API __declspec(dllimport)
+#define RACESIMULATORLIB_API __declspec(dllimport)
 #endif
 
 // Класс Ботинки-вездеходы 
 class AllTerrainBoots : public GroundVehicle {
 public:
-	RICESIMULATORLIB_API AllTerrainBoots();
+	RACESIMULATORLIB_API AllTerrainBoots();
 
-	RICESIMULATORLIB_API std::string getType() override;
+	RACESIMULATORLIB_API std::string getType() override;
 
-	RICESIMULATORLIB_API std::string getParentType() override;
+	RACESIMULATORLIB_API std::string getParentType() override;
 };

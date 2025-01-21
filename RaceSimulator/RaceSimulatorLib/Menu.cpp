@@ -2,6 +2,7 @@
 #include <limits> // для использования numeric_limits - числовых пределов
 #include "Menu.h"
 
+
 bool checkVehicleInList(std::string type, std::vector<Vehicle*> vehicleList) {
 	bool result = false;
 	if (vehicleList.size() != 0) {

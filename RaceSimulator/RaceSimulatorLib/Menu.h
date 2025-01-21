@@ -12,33 +12,33 @@
 #include "Eagle.h"
 #include "Broom.h"
 
-#ifdef RICESIMULATORLIB_EXPORTS
-#define RICESIMULATORLIB_API __declspec(dllexport)
+#ifdef RACESIMULATORLIB_EXPORTS
+#define RACESIMULATORLIB_API __declspec(dllexport)
 #else
-#define RICESIMULATORLIB_API __declspec(dllimport)
+#define RACESIMULATORLIB_API __declspec(dllimport)
 #endif
 
 // Тип гонки
-RICESIMULATORLIB_API enum RaceType { RaceGroundVehicle = 1, RaceAirVehicle, RaceGroundVehicleAndAirVehicle };
+enum RaceType { RaceGroundVehicle = 1, RaceAirVehicle, RaceGroundVehicleAndAirVehicle };
 
 // Проверка наличия в списке элемента с определенным типом
-RICESIMULATORLIB_API bool checkVehicleInList(std::string type, std::vector<Vehicle*> vehicleList);
+RACESIMULATORLIB_API bool checkVehicleInList(std::string type, std::vector<Vehicle*> vehicleList);
 
 // Выбор типа гонки
-RICESIMULATORLIB_API int selectRaceType();
+RACESIMULATORLIB_API int selectRaceType();
 
 // Ввод длины дистанции
-RICESIMULATORLIB_API void inputDistanceLength(double& distanceLength);
+RACESIMULATORLIB_API void inputDistanceLength(double& distanceLength);
 
 // Выбор ТС или начало гонки
-RICESIMULATORLIB_API int selectVenicleOrStartRace(int numberOfRegisteredVehicles);
+RACESIMULATORLIB_API int selectVenicleOrStartRace(int numberOfRegisteredVehicles);
 
 
 // Выбор транспортных средств для гонки
-RICESIMULATORLIB_API void selectVehicleOnRace(std::vector<Vehicle*>& vehicleList, double& distanceLength, RaceType raceType);
+RACESIMULATORLIB_API void selectVehicleOnRace(std::vector<Vehicle*>& vehicleList, double& distanceLength, RaceType raceType);
 
 // Вывод результатов на консоль
-RICESIMULATORLIB_API void outputResult(std::map<double, std::string>& resultRace);
+RACESIMULATORLIB_API void outputResult(std::map<double, std::string>& resultRace);
 
 // Окончание гонки или повтор
-RICESIMULATORLIB_API bool endRace();
+RACESIMULATORLIB_API bool endRace();

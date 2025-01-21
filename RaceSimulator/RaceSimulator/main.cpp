@@ -42,7 +42,7 @@ int main()
 
 		// Выбор ТС (1) или гонка (2) ?
 		do {
-			if (selectVenicleOrStartRace(vehicleList.size()) == 1) {	
+			if (selectVenicleOrStartRace(static_cast<int>(vehicleList.size())) == 1) {	
 
 				// Регистрация транспортных средств	
 				selectVehicleOnRace(vehicleList, distanceLength, raceType);

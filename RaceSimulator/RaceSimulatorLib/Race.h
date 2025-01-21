@@ -7,10 +7,10 @@
 #include "GroundVehicle.h"
 #include  "AirVehicle.h"
 
-#ifdef RICESIMULATORLIB_EXPORTS
-#define RICESIMULATORLIB_API __declspec(dllexport)
+#ifdef RACESIMULATORLIB_EXPORTS
+#define RACESIMULATORLIB_API __declspec(dllexport)
 #else
-#define RICESIMULATORLIB_API __declspec(dllimport)
+#define RACESIMULATORLIB_API __declspec(dllimport)
 #endif
 
-RICESIMULATORLIB_API void startRace(std::vector<Vehicle*>& vehicleList, std::map<double, std::string>& resultRace, double& distanceLength);
+RACESIMULATORLIB_API void startRace(std::vector<Vehicle*>& vehicleList, std::map<double, std::string>& resultRace, double& distanceLength);

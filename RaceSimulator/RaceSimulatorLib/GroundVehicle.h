@@ -3,10 +3,10 @@
 #include <string>
 #include "Vehicle.h"
 
-#ifdef RICESIMULATORLIB_EXPORTS
-#define RICESIMULATORLIB_API __declspec(dllexport)
+#ifdef RACESIMULATORLIB_EXPORTS
+#define RACESIMULATORLIB_API __declspec(dllexport)
 #else
-#define RICESIMULATORLIB_API __declspec(dllimport)
+#define RACESIMULATORLIB_API __declspec(dllimport)
 #endif
 
 // Класс наземного транспортного средства
@@ -14,15 +14,15 @@ class GroundVehicle : public Vehicle {
 	int drivingTimeWithoutRest;				//Время движения без отдыха, час
 	std::vector<double>  durationOfRest;	// длительность отдыха на разных остановках, час
 public:
-	RICESIMULATORLIB_API GroundVehicle(int speed, int drivingTimeWithoutRest, std::vector<double> durationOfRest);
+	RACESIMULATORLIB_API GroundVehicle(int speed, int drivingTimeWithoutRest, std::vector<double> durationOfRest);
 
-	RICESIMULATORLIB_API std::string getType() override;
+	RACESIMULATORLIB_API std::string getType() override;
 
-	RICESIMULATORLIB_API std::string getParentType() override;
+	RACESIMULATORLIB_API std::string getParentType() override;
 
-	RICESIMULATORLIB_API int getDrivingTimeWithoutRest();
+	RACESIMULATORLIB_API int getDrivingTimeWithoutRest();
 
-	RICESIMULATORLIB_API std::vector<double> getDurationOfRest();
+	RACESIMULATORLIB_API std::vector<double> getDurationOfRest();
 
-	RICESIMULATORLIB_API double getDurationOfRest(int index);
+	RACESIMULATORLIB_API double getDurationOfRest(int index);
 };

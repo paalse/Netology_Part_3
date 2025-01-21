@@ -3,18 +3,18 @@
 #include <string>
 #include "GroundVehicle.h"
 
-#ifdef RICESIMULATORLIB_EXPORTS
-#define RICESIMULATORLIB_API __declspec(dllexport)
+#ifdef RACESIMULATORLIB_EXPORTS
+#define RACESIMULATORLIB_API __declspec(dllexport)
 #else
-#define RICESIMULATORLIB_API __declspec(dllimport)
+#define RACESIMULATORLIB_API __declspec(dllimport)
 #endif
 
 // Класс Верблюд-быстроход
 class CamelFastSpeed : public GroundVehicle {
 public:
-	RICESIMULATORLIB_API CamelFastSpeed();
+	RACESIMULATORLIB_API CamelFastSpeed();
 
-	RICESIMULATORLIB_API std::string getType() override;
+	RACESIMULATORLIB_API std::string getType() override;
 	
-	RICESIMULATORLIB_API std::string getParentType() override;
+	RACESIMULATORLIB_API std::string getParentType() override;
 };
