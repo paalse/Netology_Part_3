@@ -11,12 +11,7 @@
 #include "MagicCarpet.h"
 #include "Eagle.h"
 #include "Broom.h"
-
-#ifdef RACESIMULATORLIB_EXPORTS
-#define RACESIMULATORLIB_API __declspec(dllexport)
-#else
-#define RACESIMULATORLIB_API __declspec(dllimport)
-#endif
+#include "spec.h"
 
 // Тип гонки
 enum RaceType { RaceGroundVehicle = 1, RaceAirVehicle, RaceGroundVehicleAndAirVehicle };

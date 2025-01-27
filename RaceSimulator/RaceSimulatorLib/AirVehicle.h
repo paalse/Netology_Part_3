@@ -1,12 +1,7 @@
 #pragma once
 #include <string>
 #include "Vehicle.h"
-
-#ifdef RACESIMULATORLIB_EXPORTS
-#define RACESIMULATORLIB_API __declspec(dllexport)
-#else
-#define RACESIMULATORLIB_API __declspec(dllimport)
-#endif
+#include "spec.h"
 
 // Класс воздушного транспортного средства
 class AirVehicle : public Vehicle {

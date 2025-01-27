@@ -102,8 +102,9 @@ void selectVehicleOnRace(std::vector<Vehicle*>& vehicleList, double& distanceLen
 
 		if (vehicleList.size() != 0) {
 			std::cout << "Зарегистированы на гонку: ";
-			for (auto vehicle : vehicleList) {
-				std::cout << vehicle->getType() << " ";
+			for (size_t i = 0; i < vehicleList.size(); i++) {
+				if (i != 0) std::cout << ", ";
+				std::cout << vehicleList[i]->getType();
 			}
 			std::cout << std::endl;
 		}

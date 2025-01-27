@@ -2,12 +2,7 @@
 #include <vector>
 #include <string>
 #include "GroundVehicle.h"
-
-#ifdef RACESIMULATORLIB_EXPORTS
-#define RACESIMULATORLIB_API __declspec(dllexport)
-#else
-#define RACESIMULATORLIB_API __declspec(dllimport)
-#endif
+#include "spec.h"
 
 // Класс Вербдюд
 class Camel : public GroundVehicle {

@@ -1,12 +1,6 @@
 #pragma once
 #include <string>
-
-#ifdef RACESIMULATORLIB_EXPORTS
-#define RACESIMULATORLIB_API __declspec(dllexport)
-#else
-#define RACESIMULATORLIB_API __declspec(dllimport)
-#endif
-
+#include "spec.h"
 
 // Класс транспортного средства
 class Vehicle {

@@ -30,6 +30,7 @@
     <ClInclude Include="MagicCarpet.h" />
     <ClInclude Include="Menu.h" />
     <ClInclude Include="Race.h" />
+    <ClInclude Include="spec.h" />
     <ClInclude Include="Vehicle.h" />
   </ItemGroup>
   <ItemGroup>

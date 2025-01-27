@@ -2,12 +2,7 @@
 #include <vector>
 #include <string>
 #include "Vehicle.h"
-
-#ifdef RACESIMULATORLIB_EXPORTS
-#define RACESIMULATORLIB_API __declspec(dllexport)
-#else
-#define RACESIMULATORLIB_API __declspec(dllimport)
-#endif
+#include "spec.h"
 
 // Класс наземного транспортного средства
 class GroundVehicle : public Vehicle {
